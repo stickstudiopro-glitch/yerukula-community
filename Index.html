@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yerukula Community — History, Culture & Customs of the Yerukula Tribe</title>
+  <meta name="description" content="A community-led archive documenting the history, culture, marriage customs, sub-tribes, and research of the Yerukula (Erukula) tribe of Andhra Pradesh, India.">
+  <meta name="theme-color" content="#8B3A2B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==================== CSS VARIABLES & RESET ==================== */
+    :root {
+      --clr-primary: #8B3A2B;
+      --clr-primary-dark: #6a2a1e;
+      --clr-accent: #C48B3F;
+      --clr-bg: #FDFBF7;
+      --clr-bg-alt: #F4EFEA;
+      --clr-surface: #FFFFFF;
+      --clr-text: #2C2A29;
+      --clr-text-muted: #6B6560;
+      --clr-border: #E2D9D0;
+      --font-heading: 'Marcellus', serif;
+      --font-body: 'Inter', sans-serif;
+      --shadow-sm: 0 2px 8px rgba(44, 42, 41, 0.04);
+      --shadow-md: 0 8px 24px rgba(44, 42, 41, 0.08);
+      --shadow-lg: 0 16px 48px rgba(44, 42, 41, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="dark"] {
+      --clr-bg: #1A1817;
+      --clr-bg-alt: #242120;
+      --clr-surface: #2C2A29;
+      --clr-text: #F0EBE6;
+      --clr-text-muted: #A39B95;
+      --clr-border: #3D3835;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--clr-bg);
+      color: var(--clr-text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: var(--clr-primary); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--clr-primary-dark); }
+    ul { list-style: none; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;
+    }
+
+    /* ==================== TYPOGRAPHY ==================== */
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--clr-text);
+    }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.5em; }
+    h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); margin-bottom: 0.5em; }
+    h4 { font-size: 1.1rem; margin-bottom: 0.75em; font-family: var(--font-body); font-weight: 600; }
+
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--clr-accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .lede {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--clr-text-muted);
+      max-width: 60ch;
+      margin-bottom: 2rem;
+    }
+
+    .prose p {
+      margin-bottom: 1.25rem;
+      color: var(--clr-text-muted);
+    }
+    .prose p:last-child { margin-bottom: 0; }
+    .prose strong { color: var(--clr-text); font-weight: 600; }
+    .prose em { font-style: italic; color: var(--clr-primary); }
+
+    /* ==================== LAYOUT ==================== */
+    .wrap {
+      width: min(1200px, 90%);
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: clamp(3rem, 8vw, 6rem) 0;
+    }
+
+    .section-alt {
+      background-color: var(--clr-bg-alt);
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: clamp(2rem, 5vw, 4rem);
+    }
+    .section-head h2 { margin-bottom: 0; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (min-width: 900px) {
+      .two-col {
+        grid-template-columns: 1.5fr 1fr;
+      }
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 600px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1000px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    /* ==================== HEADER ==================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(253, 251, 247, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--clr-border);
+      transition: background 0.3s, border-color 0.3s;
+    }
+    [data-theme="dark"] .site-header {
+      background: rgba(26, 24, 23, 0.85);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--clr-text);
+    }
+    .brand:hover { color: var(--clr-text); }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      background: var(--clr-primary);
+      color: #fff;
+      border-radius: 50%;
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .brand-text strong {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    .brand-text small {
+      font-size: 0.7rem;
+      color: var(--clr-text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* ---- Translation Prompt ---- */
+    .translate-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--clr-bg-alt);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+      padding: 0.4rem 0.85rem;
+      transition: var(--transition);
+      cursor: help;
+    }
+    .translate-wrap:hover {
+      border-color: var(--clr-accent);
+    }
+    .translate-wrap svg {
+      color: var(--clr-primary);
+      flex-shrink: 0;
+    }
+    .translate-wrap span {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--clr-text-muted);
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .site-nav ul {
+      display: flex;
+      gap: 0.25rem;
+    }
+
+    .site-nav a {
+      padding: 0.5rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-radius: var(--radius-sm);
+      color: var(--clr-text-muted);
+      transition: var(--transition);
+    }
+    .site-nav a:hover, .site-nav a.is-active {
+      background: var(--clr-bg-alt);
+      color: var(--clr-primary);
+    }
+    [data-theme="dark"] .site-nav a:hover,
+    [data-theme="dark"] .site-nav a.is-active {
+      background: rgba(255,255,255,0.06);
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--clr-border);
+      color: var(--clr-text-muted);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: var(--transition);
+    }
+    .theme-toggle:hover {
+      border-color: var(--clr-primary);
+      color: var(--clr-primary);
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--clr-text);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    @media (max-width: 950px) {
+      .nav-toggle { display: flex; }
+      .translate-wrap { order: 2; }
+      .site-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--clr-surface);
+        flex-direction: column;
+        padding: 1.5rem;
+        border-bottom: 1px solid var(--clr-border);
+        box-shadow: var(--shadow-md);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease;
+        align-items: stretch;
+      }
+      .site-nav.is-open {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      .site-nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+      .site-nav a {
+        display: block;
+        padding: 0.75rem 1rem;
+      }
+      .theme-toggle { align-self: flex-start; margin-top: 0.5rem; }
+    }
+    @media (max-width: 600px) {
+      .translate-wrap { display: none; }
+    }
+
+    /* ==================== HERO ==================== */
+    .hero {
+      position: relative;
+      padding: clamp(4rem, 12vw, 8rem) 0 clamp(6rem, 15vw, 10rem);
+      background: linear-gradient(160deg, var(--clr-bg-alt) 0%, var(--clr-bg) 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(var(--clr-border) 1px, transparent 1px);
+      background-size: 32px 32px;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    /* Hero actions removed as requested */
+    
+    .hero-band {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent), var(--clr-primary));
+    }
+
+    /* ==================== BUTTONS ==================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.75rem;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--clr-primary);
+      color: #fff;
+      border-color: var(--clr-primary);
+    }
+    .btn-primary:hover {
+      background: var(--clr-primary-dark);
+      border-color: var(--clr-primary-dark);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(139, 58, 43, 0.3);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--clr-text);
+      border-color: var(--clr-border);
+    }
+    .btn-ghost:hover {
+      border-color: var(--clr-primary);
+      color: var(--clr-primary);
+      transform: translateY(-2px);
+    }
+
+    /* ==================== FACT GRID ==================== */
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (min-width: 700px) {
+      .fact-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .fact {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: var(--clr-surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .fact:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--clr-accent);
+    }
+
+    .fact-num {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      color: var(--clr-primary);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    .fact-num sup { font-size: 0.5em; }
+    .fact-label {
+      font-size: 0.85rem;
+      color: var(--clr-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ==================== PANELS & SPECS ==================== */
+    .panel {
+      background: var(--clr-surface);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 100px;
+    }
+    .panel h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--clr-border);
+    }
+
+    .spec {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    .spec dt {
+      font-weight: 600;
+      color: var(--clr-text);
+      white-space: nowrap;
+    }
+    .spec dd {
+      color: var(--clr-text-muted);
+    }
+
+    /* ==================== CARDS ==================== */
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--clr-surface);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      color: var(--clr-text);
+      text-decoration: none;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--clr-accent);
+      color: var(--clr-text);
+    }
+
+    .card-icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      background: var(--clr-bg-alt);
+      color: var(--clr-primary);
+      border-radius: var(--radius-sm);
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      transition: var(--transition);
+    }
+    .card:hover .card-icon {
+      background: var(--clr-primary);
+      color: #fff;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: var(--clr-text-muted);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .card-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--clr-primary);
+      letter-spacing: 0.02em;
+    }
+    .card:hover .card-link {
+      color: var(--clr-primary-dark);
+    }
+
+    /* ==================== TIMELINE ==================== */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 2px solid var(--clr-border);
+      margin-top: 2rem;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+      padding-left: 1rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.55rem;
+      top: 0.5rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--clr-primary);
+      border: 3px solid var(--clr-bg-alt);
+    }
+    .timeline-year {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      color: var(--clr-primary);
+      margin-bottom: 0.25rem;
+    }
+    .timeline-item h4 {
+      margin-bottom: 0.35rem;
+      font-size: 1rem;
+    }
+    .timeline-item p {
+      font-size: 0.9rem;
+      color: var(--clr-text-muted);
+      margin: 0;
+    }
+
+    /* ==================== FOOTER ==================== */
+    .site-footer {
+      background: var(--clr-surface);
+      border-top: 1px solid var(--clr-border);
+      padding: 4rem 0 0;
+      margin-top: 4rem;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    @media (min-width: 800px) {
+      .footer-inner {
+        grid-template-columns: 2fr 3fr;
+      }
+    }
+
+    .footer-brand {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .footer-brand .brand-mark {
+      width: 40px; height: 40px; font-size: 1.25rem;
+    }
+    .footer-brand strong {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--clr-text-muted);
+      max-width: 35ch;
+    }
+
+    .footer-nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .footer-nav h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--clr-text-muted);
+      margin-bottom: 1rem;
+    }
+    .footer-nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-nav a {
+      font-size: 0.9rem;
+      color: var(--clr-text);
+    }
+    .footer-nav a:hover {
+      color: var(--clr-primary);
+    }
+
+    .footer-base {
+      border-top: 1px solid var(--clr-border);
+      padding: 1.5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--clr-text-muted);
+    }
+    .footer-note {
+      font-style: italic;
+    }
+
+    /* ==================== ANIMATIONS ==================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">ఎ</span>
+        <span class="brand-text">
+          <strong>Yerukula Community</strong>
+          <small>ఎరుకుల జాతి · Andhra Pradesh</small>
+        </span>
+      </a>
+
+      <!-- Translation Prompt -->
+      <div class="translate-wrap" title="Right-click anywhere on the page and select 'Translate to...' to read in your language">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z" fill="currentColor"/></svg>
+        <span>Translate (Right-click)</span>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home" class="is-active">Home</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#culture">Culture</a></li>
+          <li><a href="#marriage">Marriage</a></li>
+          <li><a href="#subtribes">Sub-Tribes</a></li>
+          <li><a href="#research">Research</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="currentColor"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">A plains tribe of Andhra Pradesh</p>
+        <h1>Yerukula Community</h1>
+        <p class="lede">
+          The Yerukula — also written <em>Yerukala</em> and <em>Erukula</em> — are one of the
+          principal Scheduled Tribes of Andhra Pradesh. Once a semi-nomadic people of the
+          Nallamala forests and the plains beyond, they carry a distinct Dravidian dialect,
+          an occupational sub-tribe system, four gotras and a strong <em>kula panchayat</em>.
+          This site records that heritage — including the story of their forced settlement at
+          Stuartpuram and their long journey toward dignity.
+        </p>
+        <!-- Buttons removed as requested -->
+      </div>
+      <div class="hero-band" aria-hidden="true"></div>
+    </section>
+
+    <!-- ==================== KEY FACTS ==================== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="fact-grid">
+          <div class="fact reveal">
+            <span class="fact-num">519,337</span>
+            <span class="fact-label">Yerukula population, 2011 Census of India</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-num">1910</span>
+            <span class="fact-label">Year the Stuartpuram reformatory colony was established</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-num">4</span>
+            <span class="fact-label">Gotras — Kavadi, Sathubadi, Manubadi, Mendraguthi</span>
+          </div>
+          <div class="fact reveal">
+            <span class="fact-num">90+</span>
+            <span class="fact-label">Documented house-names (intiperlu) across the community</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HISTORY ==================== -->
+    <section class="section section-alt" id="history">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Origins &amp; Etymology</p>
+          <h2>History of the Yerukula</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="prose reveal">
+            <p>
+              The name <strong>Yerukula</strong> comes from the Telugu word <em>Yeruka</em> —
+              foresight, or the disclosing of things past, present and future. The word
+              <em>Yerukalachepputa</em> means fortune-telling, and it was the Yerukula women
+              who practised it. That single profession gave the whole community its name.
+            </p>
+            <p>
+              The Yerukula speak a Dravidian dialect of their own — variously called
+              <em>Yerukula Basha</em>, <em>Kurru</em> or <em>Yerulaki</em> — described in the
+              older records as an admixture of Tamil, Telugu and Kannada, and in the Godavari
+              region as carrying Konkani influences as well. Most Yerukulas also speak Telugu
+              and can communicate freely outside their own group.
+            </p>
+            <p>
+              They are found across Andhra Pradesh — chiefly in Krishna, Guntur, Kurnool,
+              Anantapur, Nellore, Prakasam, Chittoor and Kadapa districts, and in the
+              Godavari districts — and beyond, in Tamil Nadu, Karnataka and Kerala, where
+              closely related communities go by the names <strong>Korava</strong>,
+              <strong>Koracha / Korama</strong> and <strong>Kaikadi</strong>.
+            </p>
+          </div>
+
+          <aside class="panel reveal">
+            <h3>Community snapshot</h3>
+            <dl class="spec">
+              <dt>Also known as</dt><dd>Yerukala · Erukula · Yerukalavandlu · Korava · Koracha · Kaikadi</dd>
+              <dt>Language</dt><dd>Yerukula Basha (Dravidian; Tamil–Telugu–Kannada admixture)</dd>
+              <dt>Region</dt><dd>Andhra Pradesh, Telangana, Tamil Nadu, Karnataka, Kerala</dd>
+              <dt>Sub-divisions</dt><dd>Dabba · Eetha Pullala · Kunchapuri · Parike Muggula · Karivepaku · Uppu</dd>
+              <dt>Gotras</dt><dd>Kavadi · Sathubadi · Manubadi · Mendraguthi</dd>
+              <dt>Kinship</dt><dd>Patriarchal · patrilocal · patrilineal</dd>
+              <dt>Traditional council</dt><dd>Kula Panchayat, led by the <em>Berumonusha</em></dd>
+            </dl>
+          </aside>
+        </div>
+
+        <!-- ---- Colonial History Timeline ---- -->
+        <div style="margin-top: 4rem;">
+          <div class="section-head">
+            <p class="eyebrow">Colonial Period</p>
+            <h2>From Traders to “Criminal Tribe”</h2>
+            <p class="lede" style="margin-inline: auto; text-align: center;">
+              The Yerukula were originally grain and salt traders who operated across the Madras
+              Presidency. Their descent into poverty and crime was a direct consequence of
+              British economic policies.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <p class="timeline-year">Pre-1850s</p>
+              <h4>Trade and Nomadism</h4>
+              <p>
+                The Yerukula were grain and salt traders who travelled with their families
+                across the Madras Presidency, loading goods on donkeys and bullocks and
+                supplying essentials from the coast to interior areas. They also dealt in
+                forest and agricultural produce.
+              </p>
+            </div>
+            <div class="timeline-item reveal">
+              <p class="timeline-year">1850s</p>
+              <h4>Railways Replace Pack Animals</h4>
+              <p>
+                When the British introduced road and railway transport in the 1850s, wagons
+                replaced donkeys and the Yerukula lost their traditional means of livelihood.
+                Enclosures of forest land cut them off from common pastures, and they were
+                forced into petty theft and eventually dacoity.
+              </p>
+            </div>
+            <div class="timeline-item reveal">
+              <p class="timeline-year">1871–1911</p>
+              <h4>The Criminal Tribes Act</h4>
+              <p>
+                The British colonial government enacted the Criminal Tribes Act, and the
+                Yerukula were branded a “hereditary criminal tribe.” Colonial distrust was
+                fanned by upper-caste Hindus who blamed the itinerant Yerukulas for thefts
+                and robberies. Under the Act, entire communities were placed under police
+                surveillance and forced into “reformatory” settlements.
+              </p>
+            </div>
+            <div class="timeline-item reveal">
+              <p class="timeline-year">1910–1913</p>
+              <h4>Stuartpuram Settlement Established</h4>
+              <p>
+                Harold Stuart, the home member of the Madras government, established
+                Stuartpuram as a rehabilitation colony for the Erukula tribe. It was one of
+                11 settlements, including Sitanagaram in Guntur district, Bitragunta in
+                Nellore district, and Aziz Nagar in South Arcot district. Families from
+                Kurnool, Cuddapah, Anantapur, Chittoor, Vijayawada, Guntur, Nellore and
+                other areas were brought here.
+              </p>
+            </div>
+            <div class="timeline-item reveal">
+              <p class="timeline-year">1952</p>
+              <h4>Denotification</h4>
+              <p>
+                After independence, the Government of India repealed the Criminal Tribes Act
+                in 1952, removing the legal stigma of “criminal tribe.” The Yerukula were
+                subsequently included under Scheduled Tribes in Andhra Pradesh, entitling
+                them to constitutional protections and welfare programmes.
+              </p>
+            </div>
+            <div class="timeline-item reveal">
+              <p class="timeline-year">Today</p>
+              <h4>The Struggle for Dignity Continues</h4>
+              <p>
+                Seventy years after denotification, many Yerukula families in Stuartpuram
+                and other settlements still face social stigma, poverty and lack of
+                livelihood opportunities. Community members have risen to positions in
+                bureaucracy, politics, medicine and sports, but full rehabilitation remains
+                an ongoing challenge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CULTURE ==================== -->
+    <section class="section" id="culture">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Way of Life</p>
+          <h2>Culture &amp; Customs</h2>
+        </div>
+
+        <div class="card-grid">
+          <div class="card reveal">
+            <span class="card-icon" aria-hidden="true">◈</span>
+            <h3>Language &amp; Livelihood</h3>
+            <p>The Yerukula speak a Dravidian dialect called <em>Yerukula Basha</em>. Traditionally, men made baskets and ropes, while women practised fortune-telling (<em>sodi</em>). Today, many are engaged in selling pork, making brooms, daily labour, and government or private jobs.</p>
+          </div>
+          <div class="card reveal">
+            <span class="card-icon" aria-hidden="true">❖</span>
+            <h3>Food Habits</h3>
+            <p>Rice is the staple food. The Yerukula are non-vegetarians and historically ate fowls, pork, scaly and scaleless fish, field rats, jackals, fox, cats, mongoose, and carrion. Most men drink country liquor and toddy; many smoke and chew tobacco.</p>
+          </div>
+          <div class="card reveal">
+            <span class="card-icon" aria-hidden="true">✿</span>
+            <h3>Religion &amp; Deities</h3>
+            <p>The Yerukula are animistic and polytheistic, with strong Hindu influences. They worship Ellamma (their patron deity), Pochamma (goddess of smallpox), Balamma, Mahalaxmi, and Hindu gods like Hanuman, Rajanna and Mahadeva. They also revere the souls of departed ancestors.</p>
+          </div>
+          <div class="card reveal">
+            <span class="card-icon" aria-hidden="true">❋</span>
+            <h3>Festivals</h3>
+            <p>They celebrate Hindu festivals including Sankranti, Shivaratri, Sri Ramanavami, Dasara, and Ugadi. In some areas where they are denied entry to Hindu temples, they worship stone and clay idols under trees.</p>
+          </div>
+          <div class="card reveal">
+            <span class="card-icon" aria-hidden="true">⌘</span>
+            <h3>Life Cycle Rituals</h3>
+            <p>Birth, naming, menarche, marriage, and death are marked by specific customs. For example, after childbirth, the mother and child receive a purification bath on the eleventh day. On menarche, a girl is secluded and later purified with oil, turmeric, and neem leaves.</p>
+          </div>
+          <div class="card reveal">
+            <span class="card-icon" aria-hidden="true">⚖</span>
+            <h3>Kula Panchayat</h3>
+            <p>The traditional council, led by the <em>Berumonusha</em>, settles disputes, family problems, debts, and land issues. It uses ordeals like dipping a hand in boiling oil or walking on fire to determine guilt. The guilty can be fined or excommunicated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MARRIAGE ==================== -->
+    <section class="section section-alt" id="marriage">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Kinship &amp; Alliance</p>
+          <h2>Marriage Customs</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="prose reveal">
+            <p>
+              The Yerukula are a strict endogamous group with several exogamous patrilineages.
+              Uncle–niece marriages and cross-cousin marriages (a man marrying his father's
+              sister's daughter or his mother's brother's daughter) are highly preferred.
+              Child marriages are not unusual, and some girls marry before attaining menarche.
+            </p>
+            <p>
+              Monogamy is the norm, though polygyny is occasionally observed. A marriage is
+              usually arranged through negotiation and mutual consent, but elopement is also
+              accepted. After marriage, residence is patrilocal — the couple lives with the
+              groom's parents, often in a joint family.
+            </p>
+            <p>
+              The <strong>agu madu</strong> (betrothal) ceremony involves the groom's family
+              visiting the bride's house with a new date-palm mat. The bride price is
+              discussed and settled, and an earnest amount (traditionally eight rupees) is
+              given to the bride's father. Liquor is distributed, and the first cup is served
+              to the bride's father to ratify the alliance.
+            </p>
+            <p>
+              On the wedding day, the couple is smeared with turmeric and oil, bathed, and
+              dressed in white. They sit facing a sanctified pot, and the marriage is
+              symbolised by the throwing of turmeric-coloured rice (<em>akshintalu</em>) by
+              parents and guests. A <em>pusti</em> — a necklace of black beads — is tied
+              around the bride's neck, and toe rings are placed on her toes.
+            </p>
+          </div>
+
+          <aside class="panel reveal">
+            <h3>Marriage at a glance</h3>
+            <dl class="spec">
+              <dt>Type</dt><dd>Endogamous, with exogamous lineages</dd>
+              <dt>Preferred matches</dt><dd>Uncle–niece, cross-cousin</dd>
+              <dt>Bride price</dt><dd>Negotiated at <em>agu madu</em> (betrothal)</dd>
+              <dt>Residence</dt><dd>Patrilocal</dd>
+              <dt>Divorce</dt><dd>Allowed; settled by <em>kula panchayat</em></dd>
+              <dt>Remarriage</dt><dd>Widows may remarry</dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SUB-TRIBES ==================== -->
+    <section class="section" id="subtribes">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Social Organisation</p>
+          <h2>Sub-Tribes, Gotras &amp; Surnames</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="prose reveal">
+            <p>
+              The Yerukula are divided into several occupational sub-tribes, and each
+              sub-tribe is further divided into four gotras: <strong>Kavadi</strong>,
+              <strong>Sathubadi</strong>, <strong>Manubadi</strong>, and
+              <strong>Mendraguthi</strong>. Every gotra has many house-names
+              (<em>intiperlu</em>), which are used to identify a person's lineage.
+            </p>
+            <p>
+              The sub-tribes include the <strong>Dabba Yerukula</strong> (basket makers using
+              bamboo), <strong>Eetha Pullala Yerukula</strong> (basket makers using date
+              palm), <strong>Kunchapuri Yerukula</strong> (comb makers),
+              <strong>Parike Muggula Yerukula</strong> (fortune tellers),
+              <strong>Karivepaku Yerukula</strong> (curry leaf sellers), and
+              <strong>Uppu Yerukula</strong> (salt sellers).
+            </p>
+            <p>
+              Communities known as <strong>Korama</strong>, <strong>Korabha</strong>,
+              <strong>Kanimanu</strong>, and <strong>Kanihelu</strong> are also considered
+              part of the wider Yerukula family.
+            </p>
+          </div>
+
+          <aside class="panel reveal">
+            <h3>Sub-tribes</h3>
+            <dl class="spec">
+              <dt>Dabba</dt><dd>Bamboo basket makers</dd>
+              <dt>Eetha Pullala</dt><dd>Date-palm basket makers</dd>
+              <dt>Kunchapuri</dt><dd>Comb makers</dd>
+              <dt>Parike Muggula</dt><dd>Fortune tellers</dd>
+              <dt>Karivepaku</dt><dd>Curry leaf sellers</dd>
+              <dt>Uppu</dt><dd>Salt sellers</dd>
+            </dl>
+          </aside>
+        </div>
+
+        <!-- Surname Search -->
+        <div style="margin-top: 4rem;">
+          <div class="section-head" id="surnames">
+            <p class="eyebrow">Register</p>
+            <h2>Search House-Names (Intiperlu)</h2>
+            <p class="lede" style="margin-inline: auto; text-align: center;">
+              Search by house-name, gotra, or region. Data compiled from community records.
+            </p>
+          </div>
+
+          <div style="max-width: 600px; margin: 0 auto 2rem;">
+            <input type="text" id="surnameSearch" placeholder="Search surnames, gotras, or regions..." style="width: 100%; padding: 1rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--clr-border); background: var(--clr-surface); color: var(--clr-text); font-size: 1rem; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--clr-primary)'" onblur="this.style.borderColor='var(--clr-border)'">
+          </div>
+
+          <div id="surnameList" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+            <!-- Populated by JS -->
+          </div>
+          <p id="noResults" style="text-align: center; color: var(--clr-text-muted); display: none; padding: 2rem;">No matching records found.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESEARCH ==================== -->
+    <section class="section section-alt" id="research">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Sources &amp; Survey</p>
+          <h2>Research &amp; Fieldwork</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="prose reveal">
+            <p>
+              This archive draws on published ethnographic and historical research, including
+              the work of C. Prasad (Sri Krishna Devaraya University), D.S.R.S. Prakash and
+              S. Suryanarayana Raju (Godavari Institute of Engineering and Technology), and
+              the <em>Encyclopaedia of Dravidian Tribes</em>.
+            </p>
+            <p>
+              A field survey is being conducted in <strong>Srikakulam district, Andhra
+              Pradesh</strong>, covering villages with a significant Yerukula population.
+              The survey aims to document current social organisation, marriage practices,
+              and the impact of modernisation on the community.
+            </p>
+            <p>
+              Data is collected through in-depth interviews with key informants (village
+              heads, elders, and kula panchayat leaders), informal discussions, and
+              participant observation, following standard ethnographic guidelines.
+            </p>
+            <p id="contribute">
+              <strong>Contribute or correct:</strong> This is a living document. If you have
+              additions, corrections, or family records to share, please reach out to the
+              community coordinators.
+            </p>
+          </div>
+
+          <aside class="panel reveal">
+            <h3>Key Sources</h3>
+            <ul style="font-size: 0.85rem; color: var(--clr-text-muted); display: flex; flex-direction: column; gap: 0.75rem;">
+              <li>Parthasarathy, J. 1988. <em>The Yerukula: An Ethnographic Study</em>. Calcutta: Anthropological Survey of India.</li>
+              <li>Radhakrishna, M. 2000. "Colonial Construction of a 'Criminal' Tribe: Yerukulas of Madras Presidency." <em>Economic and Political Weekly</em>, 35(28-29): 2553-2563.</li>
+              <li>Prakash, D.S.R.S. &amp; Raju, S.S. 2010. "Ethnographic Profile of Yerukula Tribe of Andhra Pradesh." <em>Studies of Tribes and Tribals</em>, 8: 41-44.</li>
+              <li>Singh, K.S. (Ed.) 1994. <em>People of India</em> series, Vol. III: The Scheduled Tribes. Oxford: Oxford University Press.</li>
+              <li>Madhava Menon, T. 1996. <em>The Encyclopedia of Dravidian Tribes</em>. Thiruvananthapuram: DLA Publications.</li>
+              <li><em>The Wire</em>. 2022. "Haunted by the Past: Why 6,000 Families from Andhra's Stuartpuram are Desperately Seeking Help."</li>
+              <li><em>The Hindu</em>. 2017. "The agony of Stuartpuram."</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOURCES & REFERENCES ==================== -->
+    <section class="section" id="sources">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Verification</p>
+          <h2>Sources &amp; References</h2>
+          <p class="lede" style="margin-inline: auto; text-align: center;">
+            All data on this site is sourced from published academic research, 
+            government records, and verified journalism. Click any source to read the original.
+          </p>
+        </div>
+        
+        <div class="card-grid">
+          <a href="https://thewire.in/caste/haunted-by-the-past-why-6000-families-from-andhras-stuartpuram-are-desperately-seeking-help" target="_blank" rel="noopener" class="card">
+            <span class="card-icon">📰</span>
+            <h3>The Wire (2022)</h3>
+            <p>Haunted by the Past: Why 6,000 Families from Andhra's Stuartpuram are Desperately Seeking Help</p>
+            <span class="card-link">Read article →</span>
+          </a>
+
+          <a href="https://www.thehindu.com/news/cities/Visakhapatnam/the-sting-of-stuartpuram-stigma/article67253175.ece" target="_blank" rel="noopener" class="card">
+            <span class="card-icon">📰</span>
+            <h3>The Hindu (2023)</h3>
+            <p>The sting of Stuartpuram stigma — the Yerukula tribe's fight for justice</p>
+            <span class="card-link">Read article →</span>
+          </a>
+
+          <a href="https://archive.org/details/yerukulaethnogra00jakk" target="_blank" rel="noopener" class="card">
+            <span class="card-icon">📄</span>
+            <h3>Parthasarathy, J. (1988)</h3>
+            <p>The Yerukula: An Ethnographic Study. Anthropological Survey of India, Calcutta.</p>
+            <span class="card-link">Read full text →</span>
+          </a>
+
+          <a href="https://www.semanticscholar.org/paper/Ethnographic-Profile-of-Yerukula-Tribe-of-Andhra-Prakash-Raju/b7d0c1bcab2d4e3e837aaa88f5766fa01afd4829" target="_blank" rel="noopener" class="card">
+            <span class="card-icon">📄</span>
+            <h3>Prakash &amp; Raju (2010)</h3>
+            <p>Ethnographic Profile of Yerukula Tribe of Andhra Pradesh. Studies of Tribes and Tribals, 8: 41-44.</p>
+            <span class="card-link">View paper →</span>
+          </a>
+
+          <a href="https://journals.sagepub.com/doi/10.1177/001946468902600201" target="_blank" rel="noopener" class="card">
+            <span class="card-icon">📄</span>
+            <h3>Radhakrishna, M. (1989)</h3>
+            <p>The Criminal Tribes Act in Madras Presidency: Implications for itinerant trading communities.</p>
+            <span class="card-link">View paper →</span>
+          </a>
+
+          <a href="https://www.fao.org/family-farming/detail/en/c/1743330/" target="_blank" rel="noopener" class="card">
+            <span class="card-icon">📄</span>
+            <h3>FAO (2025)</h3>
+            <p>Case Study on Duck Pastoralism in Andhra Pradesh — Yerukula community in Godavari districts.</p>
+            <span class="card-link">View case study →</span>
+          </a>
+
+          <a href="https://en.wikipedia.org/wiki/Yerukala_people" target="_blank" rel="noopener" class="card">
+            <span class="card-icon">🌐</span>
+            <h3>Wikipedia</h3>
+            <p>Yerukala people — population, language, and distribution data.</p>
+            <span class="card-link">View article →</span>
+          </a>
+
+          <a href="https://shodhganga.inflibnet.ac.in" target="_blank" rel="noopener" class="card">
+            <span class="card-icon">📄</span>
+            <h3>Shodhganga</h3>
+            <p>Socio-Economic Profile of Ex-Criminal Tribes of Stuartpuram — doctoral thesis.</p>
+            <span class="card-link">View thesis →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">ఎ</span>
+        <div>
+          <strong>Yerukula Community</strong>
+          <p>Documenting the history, culture and customs of the Yerukula tribe of Andhra Pradesh.</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <div>
+          <h4>Archive</h4>
+          <ul>
+            <li><a href="#history">History</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#marriage">Marriage</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#subtribes">Sub-Tribes</a></li>
+            <li><a href="#surnames">Surnames</a></li>
+            <li><a href="#research">Research</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="#sources">References</a></li>
+            <li><a href="#research">Contribute</a></li>
+            <li><a href="#top">Back to top</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="wrap footer-base">
+      <p>© <span id="year"></span> Yerukula Community Archive · yerukula-community.is-a.dev</p>
+      <p class="footer-note">Compiled from published ethnographic sources and community records. Some practices described are historical.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== MAIN SCRIPT ==================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- Set Year ---
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // --- Mobile Nav Toggle ---
+      const navToggle = document.getElementById('navToggle');
+      const siteNav = document.getElementById('site-nav');
+      navToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Close mobile nav on link click
+      siteNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          siteNav.classList.remove('is-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // --- Theme Toggle ---
+      const themeToggle = document.getElementById('themeToggle');
+      const root = document.documentElement;
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      root.setAttribute('data-theme', currentTheme);
+
+      themeToggle.addEventListener('click', () => {
+        const newTheme = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        root.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+
+      // --- Reveal on Scroll ---
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      // --- Surname Data ---
+      const surnames = [
+        { name: "గంటా", gotra: "కావాడి", region: "నల్గొండ" },
+        { name: "రుద్రాక్షి", gotra: "కావాడి", region: "రాయలసీమ, నంద్యాల" },
+        { name: "అన్నగని", gotra: "సాతుబడి", region: "ప్రకాశం జిల్లా" },
+        { name: "అద్దంకి", gotra: "మెండ్రగుత్తి", region: "విశాఖపట్నం, తూర్పు గోదావరి" },
+        { name: "ఆవుల", gotra: "మేడ్రగూతి", region: "స్టువర్టుపురం" },
+        { name: "అంచి", gotra: "కావాడి", region: "లింగాల" },
+        { name: "అనప", gotra: "కావాడి", region: "స్టువర్టుపురం" },
+        { name: "ఆమ", gotra: "సామానుబడి", region: "ఆత్మకూరు, స్టువర్టుపురం" },
+        { name: "అంగడి", gotra: "సాతుబడి", region: "స్టువర్టుపురం" },
+        { name: "అలిజె", gotra: "సాతుబడి", region: "తెలంగాణ" },
+        { name: "ఇట్ట", gotra: "మానుబడి", region: "ప్రకాశం జిల్లా" },
+        { name: "ఇరగ", gotra: "కావాడి", region: "ప్రకాశం జిల్లా" },
+        { name: "ఇరుకు", gotra: "కావాడి", region: "లింగాల" },
+        { name: "ఉయ్యాల", gotra: "కావాడి", region: "స్టువర్టుపురం, ప్రకాశం జిల్లా" },
+        { name: "కట్టా", gotra: "కావాడి", region: "ఆళ్ళూరు, ఆత్మకూరు" },
+        { name: "కామంచి", gotra: "మానుబడి", region: "ఆళ్ళూరు" },
+        { name: "కర్రెద్దుల", gotra: "కావాడి", region: "ఆత్మకూరు, స్టువర్టుపురం" },
+        { name: "కిల్లా", gotra: "సాతుబడి", region: "నెల్లూరు జిల్లా" },
+        { name: "కేంసారం", gotra: "సాతుబడి", region: "తెలంగాణ" },
+        { name: "కురకుల", gotra: "కావాడి", region: "తెలంగాణ" },
+        { name: "కందుల", gotra: "సాతుబడి", region: "లింగాల" },
+        { name: "కంప", gotra: "కావాడి", region: "లింగాల, స్టువర్టుపురం" },
+        { name: "కరుకొండ", gotra: "సాతుబడి", region: "లింగాల" },
+        { name: "కొండ్రెడ్డి", gotra: "కావాడి", region: "లింగాల" },
+        { name: "కోనేరు", gotra: "కావాడి", region: "ఆళ్ళూరు" },
+        { name: "కంద్రకొండ", gotra: "సాతుబడి", region: "స్టువర్టుపురం" },
+        { name: "కొండ్రెడ్డి", gotra: "మేండ్రగూతి", region: "స్టువర్టుపురం" },
+        { name: "కుంభ", gotra: "సాతుబడి", region: "గుంటూరు జిల్లా" },
+        { name: "గజ్జెల", gotra: "మేండ్రగూటి", region: "స్టువర్టుపురం" },
+        { name: "గంటా", gotra: "మానపటి", region: "గుంటూరు, లింగాల, కృష్ణా జిల్లా" },
+        { name: "గంధం", gotra: "కావాడి", region: "గుంటూరు జిల్లా, తూర్పు గోదావరి" },
+        { name: "గుర్రంకొండ", gotra: "సాతుబడి", region: "కప్పరాళ్ళతిప్ప, ఆత్మకూరు" },
+        { name: "గుత్తి", gotra: "కావాడి", region: "బిట్రగుంట" },
+        { name: "గుంటూరి", gotra: "మానుబడి", region: "లింగాల, ప్రకాశం జిల్లా" },
+        { name: "చిత్తూరి", gotra: "కావాడి", region: "లింగాల, స్టువర్టుపురం" },
+        { name: "చిన్నపోతుల", gotra: "మేండ్రగూతి", region: "స్టువర్టుపురం" },
+        { name: "జగన్నాథం", gotra: "కావాడి", region: "ప్రకాశం జిల్లా, కడప" },
+        { name: "దాసరి", gotra: "సాతుబడి", region: "ఆళ్ళూరు, స్టువర్టుపురం" },
+        { name: "దాసు", gotra: "కావాడి", region: "ఆళ్ళూరు, ప్రకాశం జిల్లా" },
+        { name: "దేవర", gotra: "సాతుబడి", region: "కప్పరాళ్ళతిప్ప, స్టువర్టుపురం" },
+        { name: "దేవరకొండ", gotra: "మేండ్రగూతి", region: "అన్ని ప్రాంతాల్లో" },
+        { name: "దేవరాయ", gotra: "కావాడి", region: "తెలంగాణ" },
+        { name: "దేవుసారి", gotra: "సాతుబడి", region: "తెలంగాణ" },
+        { name: "తోట", gotra: "కావాడి", region: "గుంటూరు జిల్లా" },
+        { name: "నల్లగొండ్ల", gotra: "మేండ్రగూతి", region: "కప్పరాళ్ళతిప్ప, ఆళ్ళూరు" },
+        { name: "నలబాయి", gotra: "మేండ్రగూతి", region: "కప్పరాళ్ళతిప్ప, ఆళ్ళూరు" },
+        { name: "నల్లబొత్తుల", gotra: "మేండ్రగూతి", region: "లింగాల, స్టువర్టుపురం" },
+        { name: "నెమలి", gotra: "కావాడి", region: "తెలంగాణ" },
+        { name: "నెలికుదురు", gotra: "సాతుబడి", region: "లింగాల" },
+        { name: "పాలకీర్తి", gotra: "సాతుబడి", region: "కప్పరాళ్ళతిప్ప" },
+        { name: "పాలకొంద", gotra: "సాతుబడి", region: "అన్ని ప్రాంతాల్లో" },
+        { name: "పిట్ల", gotra: "కావాడి", region: "ప్రకాశం జిల్లా" },
+        { name: "పీరిగ", gotra: "సాతుబడి, కావాడి", region: "కప్పరాళ్ళ తిప్ప, ఆత్మకూరు" },
+        { name: "పూదట", gotra: "సాతుబడి", region: "తెలంగాణ" },
+        { name: "పూజారి", gotra: "కావాడి", region: "ఆత్మకూరు, లింగాల" },
+        { name: "పెనుగొండ", gotra: "కావాడి", region: "ఆత్మకూరు, రాయలసీమ" },
+        { name: "పేరం", gotra: "సాతుబడి", region: "లింగాల, ఆళ్ళూరు" },
+        { name: "పొన్నా", gotra: "సాతుబడి", region: "లింగాల, కృష్ణా జిల్లా" },
+        { name: "పొర్సా", gotra: "సాతుబడి", region: "ఆత్మకూరు, ప్రకాశం జిల్లా" },
+        { name: "పోల", gotra: "సాతుబడి", region: "ఆత్మకూరు, లింగాల" },
+        { name: "బాదనపూరి", gotra: "కావాడి", region: "ఆళ్ళూరు, తెలంగాణ" },
+        { name: "బల్లాని", gotra: "సాతుబడి", region: "స్టువర్టుపురం" },
+        { name: "బల్లారి", gotra: "సాతుబడి", region: "లింగాల" },
+        { name: "బోనగిరి", gotra: "కావాడి", region: "స్టువర్టుపురం, కప్పరాళ్ళతిప్ప" },
+        { name: "బొచ్చు", gotra: "సాతుబడి", region: "స్టువర్టుపురం, కప్పరాళ్ళతిప్ప" },
+        { name: "బొజ్జగాని", gotra: "కావాడి", region: "స్టువర్టుపురం, లింగాల" },
+        { name: "బాగ్యం", gotra: "సాతుబడి", region: "కప్పరాళ్ళతిప్ప" },
+        { name: "మద్దెల", gotra: "మానుబడి", region: "ఆళ్ళూరు" },
+        { name: "మర్కల్", gotra: "సాతుబడి", region: "తెలంగాణ" },
+        { name: "మల్లి", gotra: "కావాడి", region: "కప్పరాళ్ళతిప్ప, స్టువర్టుపురం" },
+        { name: "మాదినె", gotra: "మానుబడి", region: "చిత్తూరు జిల్లా" },
+        { name: "మేడ (ద)", gotra: "కావాడి", region: "అక్కడక్కడా" },
+        { name: "మేకల", gotra: "మానుబడి", region: "పశ్చిమ గోదావరి, కృష్ణా" },
+        { name: "మండ్లా", gotra: "సిరిగన", region: "రాయలసీమ, ధర్మవరం" },
+        { name: "రాగాల", gotra: "సాతుబడి", region: "స్టువర్టుపురం" },
+        { name: "రాస్టపురం", gotra: "కావాడి", region: "తెలంగాణ" },
+        { name: "వల్లభ", gotra: "మానుబడి", region: "గుంటూరు జిల్లా" },
+        { name: "వనమ", gotra: "కావాడి", region: "తెలంగాణ" },
+        { name: "వల్లగి", gotra: "కావాడి", region: "స్టువర్టుపురం" },
+        { name: "వల్లగుల", gotra: "సాతుబడి", region: "లింగాల" },
+        { name: "పల్లెపు", gotra: "మేండ్రగూతి", region: "అక్కడక్కడా" },
+        { name: "పాల్వాయి", gotra: "సాతుబడి", region: "లింగాల" },
+        { name: "కుతాడి", gotra: "కావాడి", region: "తెలంగాణ" },
+        { name: "హనుమంతు", gotra: "సాతుబడి", region: "తెలంగాణ" },
+        { name: "శ్రీరామ", gotra: "కావాడి", region: "ప్రకాశం జిల్లా" },
+        { name: "సార్ల", gotra: "కావాడి", region: "ప్రకాశం జిల్లా" },
+        { name: "సొరకాయల", gotra: "కావాడి", region: "ప్రకాశం జిల్లా" },
+        { name: "సారి", gotra: "సాతుబడి", region: "లింగాల" },
+        { name: "రెవెల్లి", gotra: "సాతుబడి", region: "తెలంగాణ" },
+        { name: "దుగ్యాల", gotra: "కావడి", region: "తెలంగాణ" },
+        { name: "కేతిరి", gotra: "కావడి", region: "తెలంగాణ" },
+        { name: "కేమసారం", gotra: "సతుపడి", region: "తెలంగాణ" },
+        { name: "బిజిలి", gotra: "సాతుబడి", region: "తెలంగాణ" }
+      ];
+
+      const surnameList = document.getElementById('surnameList');
+      const surnameSearch = document.getElementById('surnameSearch');
+      const noResults = document.getElementById('noResults');
+
+      function renderSurnames(filter = '') {
+        const lowerFilter = filter.toLowerCase();
+        const filtered = surnames.filter(s => 
+          s.name.toLowerCase().includes(lowerFilter) ||
+          s.gotra.toLowerCase().includes(lowerFilter) ||
+          s.region.toLowerCase().includes(lowerFilter)
+        );
+
+        surnameList.innerHTML = '';
+        
+        if (filtered.length === 0) {
+          noResults.style.display = 'block';
+          return;
+        }
+        noResults.style.display = 'none';
+
+        filtered.forEach(s => {
+          const card = document.createElement('div');
+          card.style.cssText = `
+            background: var(--clr-surface);
+            padding: 1.25rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--clr-border);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+          `;
+          card.onmouseover = () => { card.style.borderColor = 'var(--clr-accent)'; card.style.transform = 'translateY(-2px)'; };
+          card.onmouseout = () => { card.style.borderColor = 'var(--clr-border)'; card.style.transform = 'translateY(0)'; };
+          
+          card.innerHTML = `
+            <div style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">${s.name}</div>
+            <div style="font-size: 0.85rem; color: var(--clr-text-muted);">
+              <span style="color: var(--clr-primary); font-weight: 500;">గోత్రం:</span> ${s.gotra}
+            </div>
+            <div style="font-size: 0.85rem; color: var(--clr-text-muted);">
+              <span style="color: var(--clr-primary); font-weight: 500;">ప్రాంతం:</span> ${s.region}
+            </div>
+          `;
+          surnameList.appendChild(card);
+        });
+      }
+
+      renderSurnames();
+
+      surnameSearch.addEventListener('input', (e) => {
+        renderSurnames(e.target.value);
+      });
+    });
+  </script>
+</body>
+</html>
